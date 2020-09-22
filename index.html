@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //THE FORTUNE TELLER
+
+    args = { jobTitle: 'Software Engineer', location: 'Boston', partnersName: 'Alba', totChildren: 3 };
+
+    function tellFortune(args) {
+      console.log(`You will be a ${args.jobTitle} in ${args.location}, and married to ${args.partnersName} with ${args.totChildren} kids.`);
+    }
+
+    tellFortune(args);
+
+    // THE PUPPY AGE CALCULATOR
+
+    function calculateDogAge(age, conversionRate) {
+      console.log(`Your doggie is ${age * conversionRate} years old in dog years!`);
+    }
+
+    calculateDogAge(2, 7);
+
+    // The Lifetime Supply Calculator
+
+    function calculateSupply(age, amountPerDay) {
+      let maxAge = 100;
+      let remainingYears = 100 - age;
+      console.log(`You will need ${(remainingYears * 365 * amountPerDay)} to last you until the ripe old age of ${maxAge}.`);
+    }
+
+    calculateSupply(89, 5);
+
+    // THE GEOMETRIZER
+
+    function calcCircumfrence(radius) {
+      console.log(`The circumference is ${2 * Math.PI * radius}.`)
+    }
+
+    function calcArea(radius) {
+      console.log(`The circumference is ${Math.PI * (radius ** 2)}.`);
+    }
+
+    calcCircumfrence(10);
+    calcArea(5);
+
+    // THE TEMPERATURE CONVERTER
+    function celsiusToFahrenheit(temp) {
+      console.log(`${temp}°C is ${temp * (9 / 5) + 32}°F.`);
+    }
+
+    function fahrenheitToCelsius(temp) {
+      console.log(`${temp}°F is ${(temp - 32) * (5 / 9)}°C.`);
+    }
+
+    celsiusToFahrenheit(0)
+    fahrenheitToCelsius(32)
+
+  </script>
+</body>
+
+</html>
